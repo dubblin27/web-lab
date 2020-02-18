@@ -1,0 +1,37 @@
+<html>
+<body>
+    <form name="f">
+        <form name = "f">
+            <pre>
+                <input type = "text" placeholder="Enter 1st number" id= "s1" >
+                <input type = "text" placeholder="Enter 1st number" id= "s2" >
+            </pre>
+            <button onclick="func()">Click to calculate</button>
+            <br>
+            <pre>
+                <input type = "text"  name= "ans1" placeholder = "add" >
+                <input type = "text"  name= "ans2" placeholder = "sub">
+                <input type = "text"  name= "ans3" placeholder = "mul">
+                <input type = "text"  name= "ans4" placeholder = "div">
+            </pre>
+        </form>
+    </form>
+    <script>
+        function func(){
+            event.preventDefault();
+            var a = document.getElementById("s1").value;
+            var b = document.getElementById("s2").value;
+            a = parseInt(a);
+            b = parseInt(b);
+            var c = a + b ;
+            var d = a - b ;
+            var e = a * b ;
+            var f = a / b ;
+            document.f.ans1.value = c;
+            document.f.ans2.value = d;
+            document.f.ans3.value = e;
+            document.f.ans4.value = f;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>REG FORM</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="mainform">
+			<div class="regform">
+				<form class="reg1">
+					<input type="text" placeholder="USER NAME">
+					<input type="password" placeholder="PASSWORD">
+					<input type="text" placeholder="EMAIL ID">
+					<br>
+					<button class = "regbut"> REGISTER</button>
+					<p class="message" style="color: yellow;">Already Registered ?? <a href="#"> Login </a> </p>
+
+				</form>
+			
+			
+				<form class="reg2">
+					<input type="text" placeholder="HANDLE">
+					<input type="password" placeholder="PASSWORD">
+					<br>
+					<button class = "loginbut"> LOGIN</button>
+					<p class="message" style="color: lightpink; margin: 15px 0;">Not Registered ?? <a href="#"> Register </a> </p>
+
+				</form>
+			</div>
+		</div>
+		<script  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		
+		<!-- <script type="text/javascript">
+			$('.message a').click(function(){
+				$('form').animate({height:"toggle"});
+			});
+		</script> -->
+		<script type="text/javascript">
+			$('.message a').click(function(){ $('form').animate({height:"toggle"}); });
+		</script>
+		<!-- $('.message a').click(function(){
+			$('form').animate({height:"toggle"} );
+	}); -->
+	</body>
+</html>

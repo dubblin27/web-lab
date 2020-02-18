@@ -1,0 +1,43 @@
+<html>
+<body>
+<form name="f">
+    <form name="f">
+        <pre>
+            Enter number 1: <input type="text" name="first" id="first">
+            Enter number 2: <input type="text" name="second" id="second">
+            Enter number 3: <input type="text" name="third" id="third">
+            Enter number 4: <input type="text" name="fourth" id="fourth">
+            Enter number 5: <input type="text" name="fifth" id="fifth">
+            Enter number 6: <input type="text" name="sixth" id="sixth">
+            Enter number 7: <input type="text" name="seventh" id="seventh">
+            Enter number 8: <input type="text" name="eighth" id="eighth">
+            Enter number 9: <input type="text" name="ninth" id="ninth">
+            Enter number 10: <input type="text" name="tenth" id="tenth">
+        </pre>
+        <br>
+        <button onclick="sortfunction()">Click to sort</button>
+        <br><br>
+        Sorted numbers: <input type="text" name="sorted">
+    </form>
+    <script>
+    
+    
+        function sortfunction(){
+            event.preventDefault();
+            var num=new Array();
+            num[0]=document.getElementById("first").value;
+            num[1]=document.getElementById("second").value;
+            num[2]=document.getElementById("third").value;
+            num[3]=document.getElementById("fourth").value;
+            num[4]=document.getElementById("fifth").value;
+            num[5]=document.getElementById("sixth").value;
+            num[6]=document.getElementById("seventh").value;
+            num[7]=document.getElementById("eighth").value;
+            num[8]=document.getElementById("ninth").value;
+            num[9]=document.getElementById("tenth").value;
+            num.sort((a,b)=>Number(a)>=Number(b)?1:-1)
+            document.f.sorted.value=num;
+            }
+    </script>
+</body>
+</html>

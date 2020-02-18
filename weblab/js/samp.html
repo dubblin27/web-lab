@@ -1,0 +1,43 @@
+<html>
+    <body>
+        <form name = "f">
+            <form name = "f">
+                <pre>
+                    <input type = "text" placeholder="Enter Number" id="s1">
+                    <input type = "text" placeholder="Enter Number" id="s2">
+                    <input type = "text" placeholder="Enter Number" id="s3">
+                    <input type = "text" placeholder="Enter Number" id="s4">
+                    <input type = "text" placeholder="Enter Number" id="s5">
+                    <input type = "text" placeholder="Enter Number" id="s6">
+                <br>
+                <br>
+                <button onclick="func()">Sort</button><br>
+                <input type="text" name="sorted" placeholder="Answer dsc">
+                <input type = "text" name ="ssorted" placeholder="Answer asc">
+            </pre> 
+            </form>
+        </form>
+        <script>
+            function func(){
+                event.preventDefault();
+                var num = new Array();
+                num[0] = document.getElementById("s1").value;
+                num[1] = document.getElementById("s2").value;
+                num[2] = document.getElementById("s3").value;
+                num[3] = document.getElementById("s4").value;
+                num[4] = document.getElementById("s5").value;
+                num[5] = document.getElementById("s6").value;
+                var c = num.sort(
+                    (a,b) => a.length <= b.length ? 1 : -1
+                )
+                document.f.sorted.value=c
+                var d = num.sort(
+                    (a,b) => a.length >= b.length ? 1 : -1
+                )
+                document.f.ssorted.value=d
+                
+            }
+        </script>
+    </body>
+</html>
+

@@ -1,0 +1,73 @@
+body{
+	background-image: url(/home/sabrish2701/Downloads/mountains_night_building_sky_119895_1920x1080.jpg);
+	background-size: cover;
+}
+.mainform {
+	width: 360px;
+	padding: 10px;
+	margin: auto;
+	0
+}
+
+.regform{
+	max-width: 360 px;
+	margin: 1px 20px 50px;
+	text-align: center;
+	width: 100%;
+	padding: 12px 20px;
+	margin: 0px 20px;
+	border: 3px solid #ccc;
+	
+}
+.regform input{
+	font-family: "Roboto", "sans-serif";
+	
+	background :#f2f2f2 ;
+	width: 100%;
+	
+	margin: 0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+.regform input:focus{
+	background-color: lightpink;
+}
+.regform .regbut{
+	
+	text-transform: uppercase;
+	outline: 0;
+	background-color: lightyellow;
+	width: 100%;
+	padding: 15px;
+	font-size: 14px;
+	color: red;
+}
+.regform .loginbut{
+	
+	text-transform: uppercase;
+	outline: 0;
+	background-color: lightgreen;
+	width: 100%;
+	padding: 15px;
+	font-size: 14px;
+	color: red;
+}
+
+.regform .loginbut:hover{
+	background-color: lightblue;
+}
+
+
+.regform .regbut:hover{
+	background-color: tan;
+}
+
+.regform .message a{
+	color: #4CAF50;
+	text-decoration: none;
+}
+.regform .reg1{
+	display: none;
+}
+

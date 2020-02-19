@@ -1,0 +1,39 @@
+<html>
+    <body>
+        <form name = "f" >
+            <form name = "f" >
+                <pre>
+                    <input type = "text" id = "s1" placeholder="enter num : ">
+                    <input type = "text" id = "s2" placeholder="enter num : ">
+                    <input type = "text" id = "s3" placeholder="enter num : ">
+                    <input type = "text" id = "s4" placeholder="enter num : ">
+                </pre>
+                <button onclick="func()"> sort </button>
+                <input type = "text" name = "soo" placeholder="Asc">
+                <input type = "text" name = "so" placeholder="Desc">
+                
+            </form>
+        </form>
+        <script>
+            function func(){
+                event.preventDefault();
+                var num = new Array();
+                num[0] = document.getElementById("s1").value;
+                num[1] = document.getElementById("s2").value;
+                num[2] = document.getElementById("s3").value;
+                num[3] = document.getElementById("s4").value;
+             
+                var c = num.sort(
+                    (a,b) => Number(a) <= Number(b) ? 1 : -1
+                )
+                document.f.so.value=c
+                var d = num.sort(
+                    (a,b) => Number(a) >= Number(b) ? 1 : -1
+                )
+                document.f.soo.value=d
+                
+            }
+        </script>
+
+    </body>
+</html>

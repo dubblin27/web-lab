@@ -1,39 +1,40 @@
-<html>
+<html> 
     <body>
-        <form name = "f" >
-            <form name = "f" >
-                <pre>
-                    <input type = "text" id = "s1" placeholder="enter num : ">
-                    <input type = "text" id = "s2" placeholder="enter num : ">
-                    <input type = "text" id = "s3" placeholder="enter num : ">
-                    <input type = "text" id = "s4" placeholder="enter num : ">
-                </pre>
-                <button onclick="func()"> sort </button>
-                <input type = "text" name = "soo" placeholder="Asc">
-                <input type = "text" name = "so" placeholder="Desc">
-                
-            </form>
-        </form>
+        <input type="button" value ="1" onclick="calc('1')">
+        <input type="button" value ="2" onclick="calc('2')">
+        <input type="button" value ="3" onclick="calc('3')"><br>
+        <input type="button" value ="4" onclick="calc('4')">
+        <input type="button" value ="5" onclick="calc('5')">
+        <input type="button" value ="6" onclick="calc('6')"><br>
+        <input type="button" value ="7" onclick="calc('7')">
+        <input type="button" value ="8" onclick="calc('8')">
+        <input type="button" value ="9" onclick="calc('9')"><br>
+        <input type="button" value ="10" onclick="calc('0')">
+        <br> 
+        <input type="button" value ="+" onclick="calc('+')">
+        <input type="button" value ="-" onclick="calc('-')"><br>
+        <input type="button" value ="*" onclick="calc('*')">
+        <input type="button" value ="/" onclick="calc('/')"><br><br>
+        <input type="button" value ="c" onclick="clr()">
+        <input type="button" value ="=" onclick="res()">
+        <input type="text" id="result">
+
         <script>
-            function func(){
-                event.preventDefault();
-                var num = new Array();
-                num[0] = document.getElementById("s1").value;
-                num[1] = document.getElementById("s2").value;
-                num[2] = document.getElementById("s3").value;
-                num[3] = document.getElementById("s4").value;
-             
-                var c = num.sort(
-                    (a,b) => Number(a) <= Number(b) ? 1 : -1
-                )
-                document.f.so.value=c
-                var d = num.sort(
-                    (a,b) => Number(a) >= Number(b) ? 1 : -1
-                )
-                document.f.soo.value=d
-                
+            function calc(val){
+                document.getElementById("result").value+=val
             }
+            function res() 
+          { 
+              let x = document.getElementById("result").value 
+              let y = eval(x) 
+              document.getElementById("result").value = y 
+          }  
+          function clr() s
+          { 
+              document.getElementById("result").value = "" 
+          } 
         </script>
+
 
     </body>
 </html>

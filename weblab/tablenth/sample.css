@@ -1,0 +1,16 @@
+table,th,td{
+    border:transparent;
+}
+table{
+    border-collapse: separate;
+    width: 100%;
+    border-spacing: 10px;
+}
+
+th,td{
+    padding:15px;
+    text-align: center;
+    font-family: Arial;
+    border-spacing: 10px;
+    border-radius: 30%;
+}
